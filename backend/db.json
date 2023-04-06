@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Caneta BIC Azul",
+      "price": 7.99
+    },
+    {
+      "id": 3,
+      "name": "Caneta BIC Vermelha",
+      "price": 4.5
+    },
+    {
+      "name": "Geladeira",
+      "price": "1980.44",
+      "id": 11
+    },
+    {
+      "name": "Teste Novo produto",
+      "price": "12222.99",
+      "id": 12
+    },
+    {
+      "name": "Caderno Tilibra",
+      "price": "35.00",
+      "id": 13
+    },
+    {
+      "name": "Estojo",
+      "price": "40.00",
+      "id": 14
+    },
+    {
+      "name": "Lapis",
+      "price": "3",
+      "id": 15
+    },
+    {
+      "name": "Caneta",
+      "price": "10.00",
+      "id": 16
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 17
+    },
+    {
+      "name": "teste",
+      "price": "12",
+      "id": 18
+    },
+    {
+      "name": "novo",
+      "price": "19.90",
+      "id": 19
+    },
+    {
+      "name": "teste",
+      "price": "75356556",
+      "id": 20
+    }
+  ]
+}
