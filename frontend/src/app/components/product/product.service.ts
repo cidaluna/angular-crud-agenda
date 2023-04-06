@@ -8,7 +8,7 @@ import { Product } from './product.model';
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl = "http://localhost:3001/products";
+  baseUrl = "http://localhost:3001/contatos";
   // classe service é responsavel pela comunicacao http com o Backend
   // nesse projeto o Backend é o arquivo db.json e precisa ser rodado separado com npm start
 

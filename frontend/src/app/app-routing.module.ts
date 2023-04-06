@@ -12,15 +12,15 @@ const routes: Routes = [
   component: HomeComponent 
   },
   {
-  path : "products",
+  path : "contatos",
   component: ProductCrudComponent 
   },
   {
-  path : "products/create",
+  path : "contatos/create",
   component: ProductCreateComponent 
   },
   {
-  path : "products/update/:id",
+  path : "contatos/update/:id",
   component: ProductUpdateComponent 
   }
 ];

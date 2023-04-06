@@ -10,9 +10,10 @@ import { ProductService } from '../product.service';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  public product: Product = {
-    name: '',
-    price: 0
+  public contato: Product = {
+    nome: '',
+    telefone: 0,
+    email: ''
   }
   
   constructor(private productService: ProductService,
@@ -23,19 +24,19 @@ export class ProductUpdateComponent implements OnInit {
   // Nao esta trazendo os dados no formulario de alteracao, verificar o metodo update e depois fazer metodo delete.
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get("id");
-    this.productService.readById('id').subscribe((product) => {
-      this.product = product;
+    this.productService.readById('id').subscribe((contato) => {
+      this.contato = contato;
     });
   }
 
   updateProduct():void{
-    this.productService.update(this.product).subscribe(product => {
-      this.productService.showMessage('Produto Atualizado Com Sucesso!')
-      this.router.navigate(['/products'])
+    this.productService.update(this.contato).subscribe(contato => {
+      this.productService.showMessage('Contato Atualizado Com Sucesso!')
+      this.router.navigate(['/contatos'])
     });
   }
  
   cancelProduct(): void{
-    this.router.navigate(['/products'])
+    this.router.navigate(['/contatos'])
   }
 }

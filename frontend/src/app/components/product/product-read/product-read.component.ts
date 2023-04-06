@@ -9,17 +9,17 @@ import { ProductService } from '../product.service';
 })
 export class ProductReadComponent implements OnInit {
 
-  products!: Product[];
-  displayedColumns = ['id', 'name', 'price', 'action'];
+  contatos!: Product[];
+  displayedColumns = ['id', 'nome', 'telefone', 'email', 'action'];
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     // faz chamada para o Backend injetando
 
-    this.productService.read().subscribe(products => {
-      this.products = products
-      console.log(products)
+    this.productService.read().subscribe(contatos => {
+      this.contatos = contatos;
+      console.log(contatos);
     });
   }
 
